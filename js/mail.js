@@ -11,5 +11,5 @@ $("#sendMessage").on("click", function() {
 });
 
 var contactform =  document.getElementById('gform');
-contactform.setAttribute('action', '//formspree.io/' + 'sgmabunda@gmail.com
+contactform.setAttribute('action', '//formspree.io/' + 'sgmabunda@gmail.com')
 
