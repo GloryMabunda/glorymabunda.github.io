@@ -6,7 +6,7 @@ $(document).ready(function() {
      request.abort();
   }
 
-  $('#rsvp-form').submit(function(event){
+  $('#gform').submit(function(event){
     // setup some local variables
     var $form = $(this);
 		// let's select and cache all the fields
