@@ -6,7 +6,8 @@ $("#sendMessage").on("click", function() {
         data: {message: message },
         dataType: "json"
     });
-    alert('Message submitted. Thanks for the message.');
+    //alert('Message submitted. Thanks for the message.');
+    toastr.success('Message submitted. Thank you for leaving a message.');
     return false;
 });
 
