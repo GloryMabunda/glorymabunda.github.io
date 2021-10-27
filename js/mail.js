@@ -9,3 +9,7 @@ $("#sendMessage").on("click", function() {
     alert('Message submitted. Thanks for the message.');
     return false;
 });
+
+var contactform =  document.getElementById('gform');
+contactform.setAttribute('action', '//formspree.io/' + 'sgmabunda@gmail.com
+
