@@ -1,9 +1,9 @@
 $("#sendMessage").on("click", function() {
-    message = $("#gform").serialize();
+    //message = $("#gform").serialize();
     $.ajax({
         url: "//formspree.io/sgmabunda@gmail.com", 
         method: "POST",
-        data: {message: message },
+        data: { name: $('#name').val(), email: $('#email').val(), message: $('#message').val() },
         dataType: "json"
     });
     //alert('Message submitted. Thanks for the message.');
