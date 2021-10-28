@@ -526,7 +526,11 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<p class="text-center">&nbsp Copyright &copy; 2018 All rights reserved</p>
+					<p class="text-center">&nbsp Copyright &copy; 
+						<span id="copyright">
+							<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+					    	</span> All rights reserved
+					</p>
 				</div>
 			</div>
 		</div>
