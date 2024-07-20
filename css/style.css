@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: rgb(208, 18, 103);
+  color: rgb(57, 54, 54);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: rgb(208, 18, 103);
+  color: rgb(57, 54, 54);
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background:rgb(208, 18, 103);;
+  background:rgb(57, 54, 54);;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 
 ::selection {
   color: #fff;
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 
 #fh5co-header,
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(208, 18, 103, 0.9);
+  background: rgba(27, 25, 25, 0.48);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: rgb(208, 18, 103) !important;
+  color: rgb(57, 54, 54) !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li .first-block {
   width: 40%;
   display: inline-block;
-  float: left;
+  /*float: left;*/
   color: #000;
   font-weight: bold;
 }
@@ -359,14 +359,14 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  color: rgb(208, 18, 103);
+  display: inline;
+  color: rgb(57, 54, 54);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -384,13 +384,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 #fh5co-about .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #fff;
   background: #2F3C4F;
   padding: 10px 10px 2px 10px;
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 
 .fh5co-heading {
@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: rgb(208, 18, 103);
+  background-color: rgb(57, 54, 54);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -558,11 +558,15 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
 }
 .timeline > li.timeline-unverted {
-  text-align: right;
+  text-align: justify;
+}
+
+.timeline > li.timeline-inverted {
+  text-align: justify;
 }
 @media screen and (max-width: 768px) {
   .timeline > li.timeline-unverted {
-    text-align: left;
+    text-align: justify;
   }
 }
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -664,25 +668,25 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .progress-bar {
-  background-color: #2F3C4F;
+  background-color: rgb(57, 54, 54) !important;
   height: 5px;
   display: block;
   box-shadow: none;
 }
 .progress-bar.progress-bar-1 {
-  background-color: #2980b9 !important;
+  background-color: rgb(57, 54, 54) !important;
 }
 .progress-bar.progress-bar-2 {
-  background-color: #c0392b !important;
+  background-color:rgb(57, 54, 54) !important;
 }
 .progress-bar.progress-bar-3 {
-  background-color: #d35400 !important;
+  background-color: rgb(57, 54, 54) !important;
 }
 .progress-bar.progress-bar-4 {
-  background-color: #8e44ad !important;
+  background-color: rgb(57, 54, 54) !important;
 }
 .progress-bar.progress-bar-5 {
-  background-color: #27ae60 !important;
+  background-color: rgb(57, 54, 54) !important;
 }
 
 .chart {
@@ -802,7 +806,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: rgb(208, 18, 103);
+  color: rgb(57, 54, 54);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -972,7 +976,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(27, 25, 25, 0.48);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -984,7 +988,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
   color: white;
   background: #2F3C4F;
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
 }
 
 .footerIconColor
@@ -1121,21 +1125,21 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
   color: #fff;
-  border: 2px solid rgb(208, 18, 103);
+  border: 2px solid rgb(57, 54, 54);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: rgb(253, 36, 134) !important;
-  border-color: rgb(253, 36, 134) !important;
+  background: rgb(57, 54, 54) !important;
+  border-color: rgb(57, 54, 54) !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: rgb(208, 18, 103);
+  color: rgb(57, 54, 54);
   border: 2px solid #FF9000;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: rgb(208, 18, 103);
+  background: rgb(57, 54, 54);
   color: #fff;
 }
 
@@ -1265,7 +1269,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: rgb(208, 18, 103);
+  border-color: rgb(57, 54, 54);
 }
 
 .row-pb-md {
