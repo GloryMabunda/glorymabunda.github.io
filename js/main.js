@@ -1,149 +1,119 @@
-;(function () {
-	
-	'use strict';
+// Dark/light theme toggle (no persistence — some hosting/preview contexts
+  // block localStorage; add it yourself if you want the choice to stick
+  // once this is live on your own domain).
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.addEventListener('click', () => {
+    const html = document.documentElement;
+    const isLight = html.getAttribute('data-theme') === 'light';
+    html.setAttribute('data-theme', isLight ? 'dark' : 'light');
+    themeToggle.setAttribute('aria-pressed', String(!isLight));
+  });
 
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
+// Mobile hamburger menu
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 
-	
-	var fullHeight = function() {
+// Scroll-reveal: fade+rise elements into view as they enter the viewport
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el, i) => {
+      el.style.setProperty('--stagger', `${(i % 3) * 90}ms`);
+      el.classList.add('reveal-stagger');
+      revealObserver.observe(el);
+    });
+  } else {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  }
 
-		if ( !isMobile.any() ) {
-			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
-	};
+// Active nav-link highlighting as sections scroll into view
+  const navAnchors = [...document.querySelectorAll('.nav-links a, .mobile-menu a')];
+  const sections = navAnchors
+    .map(a => document.querySelector(a.getAttribute('href')))
+    .filter(Boolean);
 
-	// Parallax
-	var parallax = function() {
-		$(window).stellar();
-	};
+  if('IntersectionObserver' in window && sections.length){
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = '#' + entry.target.id;
+        const links = navAnchors.filter(a => a.getAttribute('href') === id);
+        if(entry.isIntersecting){
+          navAnchors.forEach(a => a.classList.remove('active'));
+          links.forEach(a => a.classList.add('active'));
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(s => navObserver.observe(s));
+  }
 
-	var contentWayPoint = function() {
-		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
+// Typing animation for the hero code snippet — respects reduced-motion preference
+  const codeLines = [
+    { html: '<span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">Result</span>&gt; <span class="type">ReserveSlotAsync</span>(<span class="type">int</span> slotId)' },
+    { html: '{' },
+    { html: '&nbsp;&nbsp;<span class="kw">var</span> slot = <span class="kw">await</span> _db.Slots' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;.FirstAsync(s => s.Id == slotId);' },
+    { html: '' },
+    { html: '&nbsp;&nbsp;<span class="cmt">// RowVersion enforces optimistic concurrency</span>' },
+    { html: '&nbsp;&nbsp;slot.Status = <span class="type">BookingStatus</span>.Reserved;' },
+    { html: '' },
+    { html: '&nbsp;&nbsp;<span class="kw">try</span>' },
+    { html: '&nbsp;&nbsp;{' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">await</span> _db.SaveChangesAsync();' },
+    { html: '&nbsp;&nbsp;}' },
+    { html: '&nbsp;&nbsp;<span class="kw">catch</span> (<span class="type">DbUpdateConcurrencyException</span>)' },
+    { html: '&nbsp;&nbsp;{' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="type">Result</span>.Conflict(<span class="str">"Slot just taken."</span>);' },
+    { html: '&nbsp;&nbsp;}' },
+    { html: '}' },
+  ];
 
-			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-				
-				i++;
+  const target = document.getElementById('typedCode');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
+  function renderStatic(){
+    target.innerHTML = codeLines.map((l,i) =>
+      `<span class="ln">${i+1}</span>${l.html || '&nbsp;'}`
+    ).join('\n');
+  }
 
-					$('body .animate-box.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn animated-fast');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft animated-fast');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight animated-fast');
-							} else {
-								el.addClass('fadeInUp animated-fast');
-							}
+  function typeCode(){
+    let i = 0;
+    function nextLine(){
+      if(i >= codeLines.length){
+        // hold, then loop
+        setTimeout(() => { target.innerHTML=''; i=0; nextLine(); }, 2400);
+        return;
+      }
+      const lineHtml = codeLines[i].html || '&nbsp;';
+      const lnNum = `<span class="ln">${i+1}</span>`;
+      target.innerHTML += lnNum + lineHtml + (i < codeLines.length-1 ? '\n' : '');
+      i++;
+      setTimeout(nextLine, 220);
+    }
+    nextLine();
+  }
 
-							el.removeClass('item-animate');
-						},  k * 100, 'easeInOutExpo' );
-					});
-					
-				}, 50);
-				
-			}
-
-		} , { offset: '85%' } );
-	};
-
-
-
-	var goToTop = function() {
-
-		$('.js-gotop').on('click', function(event){
-			
-			event.preventDefault();
-
-			$('html, body').animate({
-				scrollTop: $('html').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
-
-		$(window).scroll(function(){
-
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
-				$('.js-top').removeClass('active');
-			}
-
-		});
-	
-	};
-
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 4,
-			lineCap: 'butt',
-			barColor: '#FF9000',
-			trackColor:	"#f5f5f5",
-			size: 160,
-			animate: 1000
-		});
-	};
-
-	var skillsWayPoint = function() {
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( pieChart , 400);					
-					$(this.element).addClass('animated');
-				}
-			} , { offset: '90%' } );
-		}
-
-	};
-
-
-	// Loading page
-	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
-	};
-
-	
-	$(function(){
-		contentWayPoint();
-		goToTop();
-		loaderPage();
-		fullHeight();
-		parallax();
-		// pieChart();
-		skillsWayPoint();
-	});
-
-
-}());
+  if(reduceMotion){
+    renderStatic();
+  } else {
+    typeCode();
+  }

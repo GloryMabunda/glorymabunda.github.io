@@ -1,573 +1,523 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+<head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Glory Masuluke</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Software Devloper, ASP.NET .NET C# Devloper, Java Developer Programmer" />
-	<meta name="keywords" content="Glory Masuluke Samantha Software Devloper ASP.NET .NET C# Devloper Java Developer Programmer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glory Masuluke — Fullstack C# .NET Developer</title>
 	<meta name="author" content="Glory Masuluke" />
-	<link rel="shortcut icon" href="geek.png" type="image/x-icon">
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Toastr -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-	<!-- Theme style  -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<meta name="description" content="Glory Masuluke — Fullstack C# .NET Developer based in Pretoria, South Africa. ASP.NET Core, Clean Architecture, EF Core, Azure.">
+	<meta property="og:title" content="Glory Masuluke — Fullstack C# .NET Developer">
+	<meta property="og:description" content="ASP.NET Core systems that handle real business logic: concurrency, state machines, and workflow-driven marketplaces.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
+</head>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+<body>
 
-	</head>
-	<body>
-
-	<div class="fh5co-loader"></div>
-
-	<div id="page">
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/glo.jpg);"></div>
-							<h1><span>Glory Masuluke</span></h1>
-							<h3><span>Software Developer | C# | ASP.NET MVC | JavaScript | TSQL</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://www.linkedin.com/in/glory-mabunda/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/GloryMabunda" target="_blank"><i class="icon-github"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
+	<header class="nav">
+		<div class="nav-inner">
+			<a href="#top" class="logo"><span class="bracket bracket-l">&lt;</span><span class="logo-gm">GM</span><span class="bracket bracket-r">/&gt;</span></a>
+			<nav class="nav-links">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#building">Building</a>
+				<a href="#work">Work</a>
+				<a href="#learning">Learning</a>
+			</nav>
+			<div class="nav-cta">
+				<button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode" aria-pressed="false">
+					<span class="icon-moon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+						</svg>
+					</span>
+					<span class="icon-sun">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="4"></circle>
+							<line x1="12" y1="2" x2="12" y2="4"></line>
+							<line x1="12" y1="20" x2="12" y2="22"></line>
+							<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+							<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+							<line x1="2" y1="12" x2="4" y2="12"></line>
+							<line x1="20" y1="12" x2="22" y2="12"></line>
+							<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+							<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+						</svg>
+					</span>
+				</button>
+				<a class="btn btn-secondary btn-small" href="#contact">Contact</a>
+				<button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+					<span></span><span></span><span></span>
+				</button>
 			</div>
 		</div>
+		<nav id="mobileMenu" class="mobile-menu">
+			<a href="#about">About</a>
+			<a href="#experience">Experience</a>
+			<a href="#building">Building</a>
+			<a href="#work">Work</a>
+			<a href="#learning">Learning</a>
+			<a href="#contact">Contact</a>
+		</nav>
 	</header>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Glory Masuluke</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+27 83 214 6293</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">sgmabunda@gmail.com</span></li>
-						<!-- <li><span class="first-block">Website:</span><span class="second-block">glorymabunda.github.io</span></li> -->
-						<li><span class="first-block">Address:</span><span class="second-block">Pretoria, Gauteng 0002</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello World!</h2>
-					<p>I am a detail-oriented and results-driven software developer with over 6 years of experience in designing, developing, and maintaining robust business software solutions. Specializing in full-stack development, I possess a strong foundation in C# and ASP.NET Core, alongside proficiency in ASP.NET MVC, TSQL, and JavaScript.</p>
+	<main id="top">
 
-					<p>I am committed to continuous learning and improvement, constantly refining my development techniques as a full-stack developer. I excel both independently and as a collaborative team member, thriving in dynamic environments where innovation and problem-solving skills are key.</p>
-			
-					<p><b>Featured Skills</b>
-						<ul>
-							<b>C#</b>
-							<li>Skilled in utilizing ASP.NET Framework tools to create web applications using MVC, Entity Data Model and RESTful services.</li>
-							<li>Adequately skilled in querying using LINQ to SQL, LINQ to XML and other data sources.</li>
-							<li>Skilled in Coding and Tuning SQL queries and Stored procedures using PL/SQL and T-SQL</li>
-							<li>Implemented UI using MVC 4.0, HTML, CSS, JavaScript, Bootstrap Framework and AJAX</li>
-						</ul>
-						<ul>
-							<b>Java</b>
-							<li>Adequate experience utilizing Java tools in business, Web, and client-server environments including Java Platform, Enterprise Edition (Java EE), Enterprise Java Bean (EJB), JavaServer Pages (JSP), Java Servlets and Java database Connectivity (JDBC) technologies.</li>
-							<li>Fluid understanding of multiple programming languages, including Java, C#, C++, JavaScript, HTML, and CSS.</li>
-							<li>Excellent communications skills. Adept at building strong working relationships with coworkers and management.</li>
-							<li>Troubleshooting</li>
-						</ul>
+		<!-- ================= HERO ================= -->
+		<section class="hero">
+			<div class="wrap hero-inner">
+				<div class="hero-copy">
+					<span class="eyebrow"></span>
+					<h1>Glory Masuluke</h1>
+					<h2 class="gradient-text" style="font-size:clamp(20px,2.4vw,28px); margin-bottom:18px;">
+						Fullstack C# .NET Developer
+					</h2>
+					<p class="subtitle">
+						Full Stack .NET Developer with 8+ years of experience developing applications within an ERP system,
+						APIs, reporting solutions, and database-driven applications using Microsoft's technology stack.
 					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume </h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-								<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Matric Certificate</h3>
-									<span class="company">Northern Academy - 2011</span>
-								</div>
-								<div class="timeline-body">
-									<p>High School Education</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">National Diploma</h3>
-									<span class="company">Tshwane University of Technology - 2015 - 2017</span>
-								</div>
-								<div class="timeline-body">
-									<p>Information Technology: Technical Applications</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Short Learning Programme</h3>
-									<span class="company">University of South Africa - 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p>Fundamental Accounting</p>
-								</div>
-							</div>
-						</li>
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Computer Lab Assistant</h3>
-									<span class="company">Tshwane University of Technology - Feb - Jul 2017</span>
-								</div>
-								<div class="timeline-body">
-									<p><b>Duties:</b></p>
-									<p><i class="icon-gears"></i> Facilitated a computer lab, ensuring careful treatment and maintenance of computer lab equipment.</p>
-									<p><i class="icon-gears"></i> Actively assisted students in troubleshooting technical problems they encountered and provided support to those facing difficulties in programming tasks.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Applications Developer</h3>
-									<span class="company">Geekulcha - August 2017 - February 2018</span>
-								</div>
-								<div class="timeline-body">
-									<p><b>Duties:</b></p>
-									<p><i class="icon-gears"></i> Designed and developed a web application with interactive data visualization features using libraries such as Google Charts API, D3.js, Chart.js and HighCharts.</p>
-									<p><i class="icon-gears"></i> Developed a Facebook Messenger Chatbot designed to provide additional information and relevant website links to enhance user interaction.</p>
-									<p><i class="icon-gears"></i> Contributed to the development of an informative web application aimed at providing users with comprehensive information on various topics.</p>
-									<p><i class="icon-gears"></i> Provided mentorship to high school students, offering guidance in academic and personal development.</p>
-									<p><i class="icon-gears"></i> Conducted research on emerging technologies, keeping abreast of industry advancements.</p>
-									<p><b>Software tools: Visual Studio Code, Node.js, Bootstrap, GitHub, Facebook Messenger API</b></p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-inverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Intermediate .NET Full Stack Developer</h3>
-									<span class="company">DataSaint | Matrix Design Africa - April 2018 – Present</span>
-								</div>
-								<div class="timeline-body">
-									<p><b>Duties:</b></p>
-									<p><i class="icon-gears"></i> Designed and developed modules for a ERP web application using ASP.NET Core and ASP.NET MVC frameworks.</p>
-									<p><i class="icon-gears"></i> Collaborated with QA testers, software developers, and other team members to evaluate existing applications and come up with new solutions to improve them by modifications or upgrades.</p>
-									<p><i class="icon-gears"></i> Created and implemented database objects such as stored procedures, , to optimize data management and retrieval.</p>
-									<p><i class="icon-gears"></i> Designed and implemented SQL queries and stored procedures to extract, transform, and load data from various sources for various reports on web application.</p>
-									<p><i class="icon-gears"></i> Resolved bugs to ensure the smooth functioning of the application.</p>
-									<p><b>Software tools: Visual Studio, MS SQL Server, Azure DevOps, TFS, Git, MS Power BI, Yellowfin BI, Bootstrap, JS DataTables</b></p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="fh5co-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Services Portfolio</h2>
+					<div class="cta-row">
+						<a href="#building" class="btn btn-primary">View Projects</a>
+						<a href="docs/Glory-Masuluke-CV.pdf" download class="btn btn-secondary">Download CV ↓</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-code"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Application Development</h3>
-								<p>Specializing in designing and developing responsive and scalable web applications that are tailored to meet client needs.</p>
+
+				<div class="laptop">
+					<div class="screen">
+						<div class="screen-bar">
+							<span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+							<span class="file-tab">BookingService.cs</span>
+						</div>
+						<div class="code-body" id="typedCode"></div>
+					</div>
+					<div class="laptop-base"></div>
+				</div>
+			</div>
+			<a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+				<span>Scroll</span>
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<polyline points="6 9 12 15 18 9"></polyline>
+				</svg>
+			</a>
+		</section>
+
+		<!-- ================= ABOUT ================= -->
+		<section class="section" id="about">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="eyebrow">About</span>
+					<h2 class="heading-lede">Software engineer passionate about solving complex problems through thoughtful design and modern technology.</h2>
+				</div>
+
+				<div class="about-grid">
+					<div class="about-photo-wrap">
+						<div class="avatar">
+							<img src="images/glo.jpg" alt="Glory Masuluke">
+						</div>
+						<span class="location-chip">Pretoria, South Africa</span>
+					</div>
+
+					<div class="about-body">
+						<p class="about-desc">
+							I am a detail-oriented and results-driven software developer with over 8
+							years of experience in designing, developing, and maintaining robust business software
+							solutions. Specializing in full-stack development, I possess a strong foundation in C# and
+							ASP.NET Core, alongside proficiency in ASP.NET MVC, TSQL, and JavaScript.
+						</p>
+						<p class="about-desc">
+							I am committed to continuous learning and improvement, constantly refining my development
+							techniques as a full-stack developer. I excel both independently and as a collaborative team
+							member, thriving in dynamic environments where innovation and problem-solving skills are key.
+						</p>
+
+						<div class="kpi-row">
+							<div class="kpi reveal"><span class="num">8+</span><span class="label">Years Experience</span></div>
+							<div class="kpi reveal"><span class="num">5</span><span class="label">Live Projects Shipped</span></div>
+							<div class="kpi reveal"><span class="num">3</span><span class="label">Companies</span></div>
+							<div class="kpi reveal"><span class="num">3</span><span class="label">Azure Certs In Progress</span></div>
+						</div>
+
+						<div class="stack-group">
+							<h4>Core</h4>
+							<div class="pill-row">
+								<span class="pill core">C#</span>
+								<span class="pill core">ASP.NET Core</span>
+								<span class="pill core">ASP.NET MVC</span>
+								<span class="pill core">Java</span>
+								<span class="pill core">LINQ</span>
 							</div>
 						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-database"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Database Management and Optimization</h3>
-								<p>Expertise in designing and implementing database structures, including creating efficient SQL queries and stored procedures.</p>
+						<div class="stack-group">
+							<h4>Data &amp; Databases</h4>
+							<div class="pill-row">
+								<span class="pill">T-SQL</span>
+								<span class="pill">MS SQL Server</span>
+								<span class="pill">MySQL</span>
+								<span class="pill">Oracle</span>
+								<span class="pill">PL/SQL</span>
 							</div>
 						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-stats-dots"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Business Intelligence and Reporting Solutions</h3>
-								<p>Proficient in creating business intelligence solutions with MS Power BI and Yellowfin BI, including interactive dashboard development, insightful reports to support informed decision-making.</p>
+						<div class="stack-group">
+							<h4>Business Intelligence</h4>
+							<div class="pill-row">
+								<span class="pill">Power BI</span>
+								<span class="pill">Yellowfin BI</span>
+							</div>
+						</div>
+						<div class="stack-group">
+							<h4>Frontend</h4>
+							<div class="pill-row">
+								<span class="pill">JavaScript</span>
+								<span class="pill">jQuery</span>
+								<span class="pill">HTML/CSS</span>
+								<span class="pill">Bootstrap</span>
+								<span class="pill">AJAX</span>
+							</div>
+						</div>
+						<div class="stack-group">
+							<h4>Tools &amp; Platform</h4>
+							<div class="pill-row">
+								<span class="pill">Azure DevOps</span>
+								<span class="pill">TFS</span>
+								<span class="pill">Git</span>
+								<span class="pill">Visual Studio</span>
+								<span class="pill">Azure</span>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
-		</div>
-	</div>
+		</section>
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
+		<!-- ================= MY TIMELINE ================= -->
+		<section class="section surface-section" id="experience">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="eyebrow">Career Path</span>
+					<h2>My Timeline</h2>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">C#</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped active" role="progressbar"
-							aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-							</div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-							<h3><span class="name-left">Java</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-							  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-							  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-							  </div>
-							</div>
-						</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">SQL</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">JavaScript/Jquery</span><span class="value-right">100%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-							<h3><span class="name-left">HTML/CSS</span><span class="value-right">100%</span></h3>
-							<div class="progress">
-							  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-							  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-							  </div>
-							</div>
-						</div>
 
-					<div class="progress-wrap">
-						<h3><span class="name-left">MySQL</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
+				<div class="tl-vertical">
+					<div class="tl-vline"></div>
+
+					<div class="tl-chip-row"><span class="tl-chip">EDUCATION</span></div>
+
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left">
+							<p class="tl-meta">Northern Academy · 2011</p>
+							<h3>Matric Certificate</h3>
+							<p class="t-desc">High School Education</p>
 						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Oracle</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-							<div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-							aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-							</div>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M22 10L12 5 2 10l10 5 10-5z"></path>
+								<path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"></path>
+								<line x1="22" y1="10" x2="22" y2="16"></line>
+							</svg>
 						</div>
+						<div class="tl-content side-right"></div>
 					</div>
-					<div class="progress-wrap">
-							<h3><span class="name-left">MS SQL Server</span><span class="value-right">70%</span></h3>
-							<div class="progress">
-								<div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-								aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								</div>
-							</div>
+
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left"></div>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M22 10L12 5 2 10l10 5 10-5z"></path>
+								<path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"></path>
+								<line x1="22" y1="10" x2="22" y2="16"></line>
+							</svg>
+						</div>
+						<div class="tl-content side-right">
+							<p class="tl-meta">Tshwane University of Technology · 2015–2017</p>
+							<h3>National Diploma</h3>
+							<p class="t-desc">Information Technology: Technical Applications</p>
 						</div>
 					</div>
 
-				</div>
-			</div>
-		</div>
-	</div>
-
-	 <div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Portfolio</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://shebaorganics.co.za/" target="_blank" class="work" style="background-image: url(images/sheba.PNG);">
-						<div class="desc">
-							<h3>Sheba Organics Website</h3>
-							<span>Farming</span>
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left">
+							<p class="tl-meta">University of South Africa · 2023</p>
+							<h3>Short Learning Programme</h3>
+							<p class="t-desc">Fundamental Accounting</p>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://geohunter.co.za" target="_blank" class="work" style="background-image: url(images/geo.PNG);">
-						<div class="desc">
-							<h3>Geohunter Consultants Website</h3>
-							<span>Construction</span>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M22 10L12 5 2 10l10 5 10-5z"></path>
+								<path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"></path>
+								<line x1="22" y1="10" x2="22" y2="16"></line>
+							</svg>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://bonganiwedsglory.co.za" target="_blank" class="work" style="background-image: url(images/wedding.PNG);">
-						<div class="desc">
-							<h3>Wedding RSVP Website</h3>
-							<span>Wedding</span>
+						<div class="tl-content side-right"></div>
+					</div>
+
+					<div class="tl-chip-row"><span class="tl-chip">WORK EXPERIENCE</span></div>
+
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left"></div>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect x="2" y="7" width="20" height="14" rx="2"></rect>
+								<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+								<line x1="2" y1="13" x2="22" y2="13"></line>
+							</svg>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/GloryMabunda/BlackPearlOnlineShop" target="_blank" class="work" style="background-image: url(images/black.png);">
-						<div class="desc">
-							<h3>Shopping Cart Project</h3>
-							<span>E-Commerce</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="http://www.wilsonvisionsunlimited.co.za" target="_blank" class="work" style="background-image: url(images/visions.PNG);">
-						<div class="desc">
-							<h3>Wilson Visions Unlimited Website</h3>
-							<span>Graphic Design</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Articles</h2>
-					<p>My featured opinions</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/data.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Nov. 29th 2017</span>
-							<h3><a href="#">Using Data to tell the Geekulcha story</a></h3>
-							<p>Data is important for developers, because so many times I think developers like myself get an idea of building a digital solution that seems or feels to be ground-breaking or digitally revolutionary, however we don’t analyse exactly what we’re aiming at solving in order for our solutions to be relevant, usable or economically viable...</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li> 
-								<li><a href="https://blog.geekulcha.com/glory-mabunda-on-using-data-to-tell-the-geekulcha-story/">Read More<i class="icon-arrow-right22"></i></a></li>
+						<div class="tl-content side-right">
+							<p class="tl-meta">Tshwane University of Technology · Feb–Jul 2017</p>
+							<h3>Computer Lab Assistant</h3>
+							<ul class="duty-list">
+								<li>Facilitated a computer lab, ensuring careful treatment and maintenance of computer lab equipment.</li>
+								<li>Actively assisted students in troubleshooting technical problems they encountered and provided support to those facing difficulties in programming tasks.</li>
 							</ul>
 						</div>
 					</div>
-				</di>
+
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left">
+							<p class="tl-meta">Geekulcha · Aug 2017 – Feb 2018</p>
+							<h3>Junior Applications Developer</h3>
+							<ul class="duty-list">
+								<li>Designed and developed a web application with interactive data visualization features using libraries such as Google Charts API, D3.js, Chart.js and HighCharts.</li>
+								<li>Developed a Facebook Messenger Chatbot designed to provide additional information and relevant website links to enhance user interaction.</li>
+								<li>Contributed to the development of an informative web application aimed at providing users with comprehensive information on various topics.</li>
+								<li>Provided mentorship to high school students, offering guidance in academic and personal development.</li>
+								<li>Conducted research on emerging technologies, keeping abreast of industry advancements.</li>
+							</ul>
+						</div>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect x="2" y="7" width="20" height="14" rx="2"></rect>
+								<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+								<line x1="2" y1="13" x2="22" y2="13"></line>
+							</svg>
+						</div>
+						<div class="tl-content side-right"></div>
+					</div>
+
+					<div class="tl-node-row reveal">
+						<div class="tl-content side-left"></div>
+						<div class="tl-node step-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<rect x="2" y="7" width="20" height="14" rx="2"></rect>
+								<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+								<line x1="2" y1="13" x2="22" y2="13"></line>
+							</svg>
+						</div>
+						<div class="tl-content side-right">
+							<p class="tl-meta">DataSaint | Matrix Design Africa · Apr 2018 – Present</p>
+							<h3>Intermediate .NET Full Stack Developer</h3>
+							<ul class="duty-list">
+								<li>Designed and developed modules for an ERP web application using ASP.NET Core and ASP.NET MVC frameworks.</li>
+								<li>Collaborated with QA testers, software developers, and other team members to evaluate existing applications and come up with new solutions to improve them by modifications or upgrades.</li>
+								<li>Created and implemented database objects such as stored procedures, to optimize data management and retrieval.</li>
+								<li>Designed and implemented SQL queries and stored procedures to extract, transform, and load data from various sources for various reports on web application.</li>
+								<li>Resolved bugs to ensure the smooth functioning of the application.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>-->
+		</section>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/code.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<!-- https://script.google.com/macros/s/AKfycbyj1KAeW5qg-Dhba3fHaLycW6iAM5pLQs20tezJ/exec -->
-			<form id= "gform" method ="POST">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input name="name" type="text" id="name" class="form-control" placeholder="Your Name">
-					</div>
-				</div>
-				<!--<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="surname" class="form-control" placeholder="Your Surname">
-					</div>
-				</div>-->
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input name= "email" type="email" id="email" class="form-control" placeholder="Your email address">
-					</div>
+		<!-- ================= CURRENTLY BUILDING ================= -->
+		<section class="section" id="building">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="eyebrow">Currently Building</span>
+					<h2 class="heading-lede">Expanding my expertise through continuous learning and practical application.</h2>
+					<p>Each uses ASP.NET Core, Clean Architecture, EF Core, JWT auth, xUnit, GitHub Actions CI/CD, and Azure deployment — with a full ARCHITECTURE.md per repo.</p>
 				</div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Leave me a message."></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input id="sendMessage" type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>
-		</div>
-	</div>
-
-	<!-- <div id="map" class="fh5co-map"></div>
-	</div> -->
-
-	<div id="fh5co-footer" class="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<p>
-						<ul style="list-style: none;">
-							<li>Glory Masuluke</li>
-							<li >
-								<!-- <a><i class="icon-map-marker footerIconColor"></i></a> Pretoria, Gauteng
-								<a><i class="icon-phone2 footerIconColor"></i></a> +27 83 214 6293 -->
-								<a><i class="icon-envelope2 footerIconColor"></i></a> sgmabunda@gmail.com
-							</li>
-							<li style="font-size: 35px;">
-								<a href="https://www.linkedin.com/in/glory-mabunda/" target="_blank"><i class="icon-linkedin2 footerIconColor"></i></a>
-								<a href="https://github.com/GloryMabunda" target="_blank"><i class="icon-github footerIconColor"></i></a>
-							</li>
-						</ul>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<p>
-					<ul style="list-style: none;">
-						<li>&nbsp&nbsp</li>
-						<li >
-							<!-- <a><i class="icon-map-marker footerIconColor"></i></a> Pretoria, Gauteng -->
-							<a><i class="icon-phone2 footerIconColor"></i></a> +27 83 214 6293
-							<!-- <a><i class="icon-envelope2 footerIconColor"></i></a> sgmabunda@gmail.com -->
-						</li>
-					</ul>
-					</p>
-				</div>
-				<div class="col-md-4">
-						<p>
-						<ul style="list-style: none;">
-							<li>&nbsp&nbsp</li>
-							<li>
-								<a><i class="icon-map-marker footerIconColor"></i></a> Pretoria, Gauteng
-								<!-- <a><i class="icon-phone2 footerIconColor"></i></a> +27 83 214 6293
-								<a><i class="icon-envelope2 footerIconColor"></i></a> sgmabunda@gmail.com -->
-							</li>
-						</ul>
+				<div class="card-grid">
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>Service Booking Marketplace</h3>
+							<span class="badge progress">In Progress</span>
+						</div>
+						<p class="card-desc">
+							A booking platform where double-booking isn't an edge case — it's the main problem.
+							Solved with optimistic concurrency control so conflicting writes fail safely instead
+							of silently corrupting a schedule.
 						</p>
+						<div class="pill-row">
+							<span class="pill core">ASP.NET Core</span>
+							<span class="pill core">EF Core</span>
+							<span class="pill">JWT Auth</span>
+							<span class="pill">xUnit</span>
+							<span class="pill">Azure</span>
+						</div>
+						<div class="card-links">
+							<a href="#">GitHub Repo →</a>
+							<a href="#">ARCHITECTURE.md →</a>
+						</div>
 					</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<p class="text-center">&nbsp Copyright &copy; 
-						<span id="copyright">
-							<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-					    	</span> All rights reserved
-					</p>
+
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>Job Board / Talent Marketplace</h3>
+							<span class="badge progress">In Progress</span>
+						</div>
+						<p class="card-desc">
+							A job marketplace built around CQRS with MediatR, where every application moves
+							through an explicit state machine — submitted, reviewed, shortlisted, closed —
+							instead of a status column that means whatever the last dev decided.
+						</p>
+						<div class="pill-row">
+							<span class="pill core">CQRS</span>
+							<span class="pill core">MediatR</span>
+							<span class="pill">ASP.NET Core</span>
+							<span class="pill">xUnit</span>
+							<span class="pill">Azure</span>
+						</div>
+						<div class="card-links">
+							<a href="#">GitHub Repo →</a>
+							<a href="#">ARCHITECTURE.md →</a>
+						</div>
+					</div>
+
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>Personal Finance Agent</h3>
+							<span class="badge planned">Planned</span>
+						</div>
+						<p class="card-desc">
+							An AI agent that reads bank statements and monthly budgeted expenses to track spending
+							against a real budget, flag drift as it happens, and give ongoing guidance toward
+							specific financial goals — instead of a dashboard that just reports numbers back.
+						</p>
+						<div class="pill-row">
+							<span class="pill core">ASP.NET Core</span>
+							<span class="pill core">Azure OpenAI</span>
+							<span class="pill">EF Core</span>
+							<span class="pill">xUnit</span>
+							<span class="pill">Azure</span>
+						</div>
+						<div class="card-links">
+							<a href="#">GitHub Repo →</a>
+							<a href="#">ARCHITECTURE.md →</a>
+						</div>
+					</div>
 				</div>
 			</div>
+		</section>
+
+		<!-- ================= SELECTED WORK ================= -->
+		<section class="section" id="work">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="eyebrow">Project Portfolio</span>
+					<h2>Projects I've built.</h2>
+				</div>
+
+				<div class="work-grid">
+					<a class="work-card reveal" href="https://shebaorganics.co.za/" target="_blank" rel="noopener">
+						<span class="work-tag">Farming</span>
+						<h3>Sheba Organics</h3>
+						<span class="work-link">shebaorganics.co.za →</span>
+					</a>
+					<a class="work-card reveal" href="https://geohunter.co.za" target="_blank" rel="noopener">
+						<span class="work-tag">Construction</span>
+						<h3>Geohunter Consultants</h3>
+						<span class="work-link">geohunter.co.za →</span>
+					</a>
+					<a class="work-card reveal" href="https://bonganiwedsglory.co.za" target="_blank" rel="noopener">
+						<span class="work-tag">Wedding</span>
+						<h3>Wedding RSVP Site</h3>
+						<span class="work-link">bonganiwedsglory.co.za →</span>
+					</a>
+					<a class="work-card reveal" href="https://github.com/GloryMabunda/BlackPearlOnlineShop" target="_blank" rel="noopener">
+						<span class="work-tag">E-Commerce</span>
+						<h3>Shopping Cart Project</h3>
+						<span class="work-link">View on GitHub →</span>
+					</a>
+					<a class="work-card reveal" href="http://www.wilsonvisionsunlimited.co.za" target="_blank" rel="noopener">
+						<span class="work-tag">Graphic Design</span>
+						<h3>Wilson Visions Unlimited</h3>
+						<span class="work-link">wilsonvisionsunlimited.co.za →</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= LEARNING PATH ================= -->
+		<section class="section surface-section" id="learning">
+			<div class="wrap">
+				<div class="section-head reveal">
+					<span class="eyebrow">Learning Path</span>
+					<h2>Microsoft Learn, next up.</h2>
+					<p>Certifications queued to back the Azure work already happening in the projects above.</p>
+				</div>
+
+				<div class="card-grid">
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>AZ-204</h3>
+							<span class="badge planned">Planned</span>
+						</div>
+						<p class="card-desc">Azure Developer Associate — building, testing, and deploying apps and services on Azure.</p>
+						<div class="progress-bar"><span style="width:15%"></span></div>
+						<span class="progress-label">Started · module 2 of ~14</span>
+					</div>
+
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>AI-200</h3>
+							<span class="badge planned">Planned</span>
+						</div>
+						<p class="card-desc">Applied AI on Azure — integrating AI-powered features into applications and workflows.</p>
+						<div class="progress-bar"><span style="width:0%"></span></div>
+						<span class="progress-label">Not started</span>
+					</div>
+
+					<div class="card reveal">
+						<div class="card-top">
+							<h3>AZ-305</h3>
+							<span class="badge planned">Planned</span>
+						</div>
+						<p class="card-desc">Designing Microsoft Azure Infrastructure Solutions — architecture-level cloud design.</p>
+						<div class="progress-bar"><span style="width:0%"></span></div>
+						<span class="progress-label">Not started</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer id="contact">
+		<div class="wrap footer-inner">
+			<p class="footer-brand"><span class="bracket bracket-l">&lt;</span><span class="logo-gm">GM</span><span class="bracket bracket-r">/&gt;</span></p>
+			<div class="footer-links">
+				<a href="mailto:sgmabunda@gmail.com" class="footer-icon" aria-label="Email Glory">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<rect x="2" y="4" width="20" height="16" rx="2"></rect>
+						<path d="M2 6l10 7 10-7"></path>
+					</svg>
+				</a>
+				<a href="https://www.linkedin.com/in/glory-mabunda/" target="_blank" rel="noopener" class="footer-icon" aria-label="LinkedIn">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M6 9H2v12h4V9z"></path>
+						<path d="M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+						<path d="M10 9h4v2s1-2.2 4-2.2c3 0 4 2 4 5.4V21h-4v-6c0-1.4-.6-2.3-2-2.3-1.5 0-2 1.1-2 2.3v6h-4V9z"></path>
+					</svg>
+				</a>
+				<a href="https://github.com/GloryMabunda" target="_blank" rel="noopener" class="footer-icon" aria-label="GitHub">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path>
+					</svg>
+				</a>
+				<a href="#top" class="footer-icon" aria-label="Back to top">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="18 15 12 9 6 15"></polyline>
+					</svg>
+				</a>
+			</div>
 		</div>
-	</div>
+	</footer>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!--Toastr -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!-- Mail -->
-	<script src="js/mail.js"></script>
-
-	</body>
+</body>
 </html>
