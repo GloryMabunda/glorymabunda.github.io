@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <text x="32" y="44"
+        text-anchor="middle"
+        font-family="'JetBrains Mono', 'Courier New', monospace"
+        font-weight="700"
+        font-size="30"
+        letter-spacing="-1.5">
+    <tspan fill="#F0399A">&lt;</tspan><tspan fill="#C026D3">GM</tspan><tspan fill="#F0399A">/&gt;</tspan>
+  </text>
+</svg>
