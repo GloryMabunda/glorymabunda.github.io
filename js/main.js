@@ -1,4 +1,4 @@
-// Dark/light theme toggle (no persistence — some hosting/preview contexts
+// Dark/light theme toggle (no persistence â€” some hosting/preview contexts
   // block localStorage; add it yourself if you want the choice to stick
   // once this is live on your own domain).
   const themeToggle = document.getElementById('themeToggle');
@@ -6,7 +6,7 @@
     const html = document.documentElement;
     const isLight = html.getAttribute('data-theme') === 'light';
     html.setAttribute('data-theme', isLight ? 'dark' : 'light');
-    themeToggle.setAttribute('aria-pressed', String(!isLight));
+    themeToggle.setAttribute('aria-pressed', String(isLight));
   });
 
 // Mobile hamburger menu
@@ -65,7 +65,7 @@
     sections.forEach(s => navObserver.observe(s));
   }
 
-// Typing animation for the hero code snippet — respects reduced-motion preference
+// Typing animation for the hero code snippet â€” respects reduced-motion preference
   const codeLines = [
     { html: '<span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">Result</span>&gt; <span class="type">ReserveSlotAsync</span>(<span class="type">int</span> slotId)' },
     { html: '{' },
