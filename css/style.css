@@ -258,6 +258,16 @@ header.nav {
         border-color: var(--primary);
     }
 
+.theme-toggle .icon-moon,
+.theme-toggle .icon-sun {
+  color: var(--white);
+}
+
+.theme-toggle svg {
+  width: 17px;
+  height: 17px;
+}
+
 /* Dark mode: show sun to indicate switching to light */
 .theme-toggle .icon-moon {
   display: none;
