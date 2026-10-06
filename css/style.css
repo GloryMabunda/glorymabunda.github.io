@@ -558,7 +558,9 @@ section.hero {
     font-family: 'JetBrains Mono',monospace;
     font-size: 12.5px;
     line-height: 1.75;
-    min-height: 280px;
+    /* 17 lines × (12.5px × 1.75) ≈ 372px + 44px padding */
+    height: 416px;
+    overflow: hidden;
     white-space: pre;
 }
 
@@ -1248,6 +1250,15 @@ footer {
 
     section.hero {
         padding: 120px 0 60px;
+        min-height: 100vh;
+        min-height: 100svh;
+    }
+
+    .code-body {
+        font-size: 10px;
+        padding: 16px 14px;
+        /* 17 × 17.5px ≈ 298px + 32px padding */
+        height: 332px;
     }
 }
 
