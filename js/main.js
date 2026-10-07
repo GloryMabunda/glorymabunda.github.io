@@ -66,25 +66,22 @@
   }
 
 // Typing animation for the hero code snippet — respects reduced-motion preference
-  const codeLines = [
-    { html: '<span class="kw">public async</span> <span class="type">Task</span>&lt;<span class="type">Result</span>&gt; <span class="type">ReserveSlotAsync</span>(<span class="type">int</span> slotId)' },
+const codeLines = [
+    { html: '<span class="kw">var</span> developer = <span class="kw">new</span> <span class="type">Developer</span>' },
     { html: '{' },
-    { html: '&nbsp;&nbsp;<span class="kw">var</span> slot = <span class="kw">await</span> _db.Slots' },
-    { html: '&nbsp;&nbsp;&nbsp;&nbsp;.FirstAsync(s => s.Id == slotId);' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;Name = <span class="str">"Glory"</span>,' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;Experience = <span class="num">8</span>,' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;Coffee = <span class="num">1</span>' },
+    { html: '};' },
     { html: '' },
-    { html: '&nbsp;&nbsp;<span class="cmt">// RowVersion enforces optimistic concurrency</span>' },
-    { html: '&nbsp;&nbsp;slot.Status = <span class="type">BookingStatus</span>.Reserved;' },
+    { html: 'developer.WriteCode();' },
+    { html: 'developer.SolveProblems();' },
+    { html: 'developer.LearnSomethingNew();' },
     { html: '' },
-    { html: '&nbsp;&nbsp;<span class="kw">try</span>' },
-    { html: '&nbsp;&nbsp;{' },
-    { html: '&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">await</span> _db.SaveChangesAsync();' },
-    { html: '&nbsp;&nbsp;}' },
-    { html: '&nbsp;&nbsp;<span class="kw">catch</span> (<span class="type">DbUpdateConcurrencyException</span>)' },
-    { html: '&nbsp;&nbsp;{' },
-    { html: '&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">return</span> <span class="type">Result</span>.Conflict(<span class="str">"Slot just taken."</span>);' },
-    { html: '&nbsp;&nbsp;}' },
-    { html: '}' },
-  ];
+    { html: 'developer.Coffee++;' },
+    { html: '' },
+    { html: '<span class="type">Console</span>.WriteLine(<span class="str">"Ready for the next challenge."</span>);' }
+];
 
   const target = document.getElementById('typedCode');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
