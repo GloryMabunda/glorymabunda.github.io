@@ -71,7 +71,7 @@ const codeLines = [
     { html: '{' },
     { html: '&nbsp;&nbsp;&nbsp;&nbsp;Name = <span class="str">"Glory"</span>,' },
     { html: '&nbsp;&nbsp;&nbsp;&nbsp;Experience = <span class="num">8</span>,' },
-    { html: '&nbsp;&nbsp;&nbsp;&nbsp;Coffee = <span class="num">1</span>' },
+    { html: '&nbsp;&nbsp;&nbsp;&nbsp;Coffee = <span class="num">3312</span>' },
     { html: '};' },
     { html: '' },
     { html: 'developer.WriteCode();' },
