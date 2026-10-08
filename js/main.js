@@ -80,7 +80,7 @@ const codeLines = [
     { html: '' },
     { html: 'developer.Coffee++;' },
     { html: '' },
-    { html: '<span class="type">Console</span>.WriteLine(<span class="str">"Ready for the next challenge."</span>);' }
+    { html: '<span class="type">Console</span>.WriteLine(<span class="str">"Coffee is part of the process."</span>);' }
 ];
 
   const target = document.getElementById('typedCode');
