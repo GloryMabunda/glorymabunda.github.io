@@ -672,22 +672,26 @@ section.hero {
     gap: 20px;
 }
 
+
 .avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     background: var(--gradient);
     padding: 4px;
+    overflow: hidden;
 }
 
-    .avatar img, .avatar .placeholder {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        background: var(--surface-2);
-    }
+.avatar img,
+.avatar .placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: contain;
+    display: block;
+    background: var(--surface-2);
+}
+
 
     .avatar .placeholder {
         display: flex;
