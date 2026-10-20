@@ -1077,6 +1077,30 @@ section.hero {
         color: var(--secondary);
     }
 
+    .badge.live {
+        background: rgba(34,197,94,0.14);
+        color: #22C55E;
+    }
+
+    html[data-theme="light"] .badge.live {
+        background: rgba(21,128,61,0.12);
+        color: #15803D;
+    }
+
+/* The main link of a card, such as a live demo */
+.card-links a.card-link-primary {
+    color: var(--btn-primary-bg);
+    font-weight: 600;
+}
+
+html[data-theme="light"] .card-links a.card-link-primary {
+    color: var(--primary);
+}
+
+    .card-links a.card-link-primary:hover {
+        border-color: currentColor;
+    }
+
 .card h3 {
     font-size: 20px;
     margin-bottom: 10px;
